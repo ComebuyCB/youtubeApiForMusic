@@ -222,7 +222,7 @@
                         },
                         error(err){
                             console.log(err);
-                            $('#getTokenBtn').show();
+                            showGetTokenBtn = true;
                             alert('訪問失敗，可能是Token超時，請重新取得Token。')
                         },
                         complete(){
@@ -239,6 +239,7 @@
                     loadYT_PlayLists,
                     loadYT_ListItems,
                     prevTrack, nextTrack,
+                    revokeToken,
                 }
             }
         }
